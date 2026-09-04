@@ -88,7 +88,7 @@ ul {
 }
 
 .section {
-    padding: 110px 0;
+    padding: 70px 0;
 }
 
 .section-warm {
@@ -1464,7 +1464,7 @@ p {
 @media (max-width: 800px) {
 
     .section {
-        padding: 80px 0;
+        padding: 60px 0;
     }
 
     .menu-toggle {
@@ -1687,4 +1687,28 @@ p {
         grid-column: auto;
     }
 
+}
+/* =========================================================
+   BEREA MIDDLE SCHOOL LOGO
+========================================================= */
+
+body {
+    position: relative;
+}
+
+.bms-logo {
+    position: absolute;
+    top: 105px;
+    left: 35px;
+
+    width: 190px;
+    height: 190px;
+
+    object-fit: contain;
+    border-radius: 50%;
+
+    opacity: 0.10;
+
+    pointer-events: none;
+    z-index: 0;
 }

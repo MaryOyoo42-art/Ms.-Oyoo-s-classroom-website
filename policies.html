@@ -35,7 +35,7 @@
         .policy-page {
             max-width: 900px;
             margin: 0 auto;
-            padding: 70px 25px 90px;
+            padding: 65px 25px 85px;
         }
 
         .back-link {
@@ -60,27 +60,30 @@
 
         h1 {
             margin: 0 0 18px;
-            font-size: clamp(2.2rem, 5vw, 4rem);
+            font-size: clamp(2.3rem, 5vw, 4rem);
             line-height: 1.1;
             font-weight: 500;
         }
 
         .intro {
             max-width: 700px;
-            margin-bottom: 60px;
+            margin-bottom: 55px;
             color: #66717a;
             font-size: 1.05rem;
         }
 
         .policy-section {
-            padding: 45px 0;
-            border-top: 1px solid #d9d6cf;
-            scroll-margin-top: 30px;
+            display: none;
+            padding: 42px 0;
+        }
+
+        .policy-section:target {
+            display: block;
         }
 
         .policy-number {
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 9px;
             font-size: 0.78rem;
             letter-spacing: 0.12em;
             font-weight: 700;
@@ -88,16 +91,15 @@
         }
 
         h2 {
-            margin: 0 0 22px;
+            margin: 0 0 20px;
             font-size: 2rem;
             line-height: 1.2;
             font-weight: 500;
         }
 
         h3 {
-            margin-top: 32px;
-            margin-bottom: 10px;
-            font-size: 1.15rem;
+            margin: 28px 0 9px;
+            font-size: 1.1rem;
         }
 
         p {
@@ -105,25 +107,45 @@
         }
 
         ul {
-            margin: 0 0 20px;
-            padding-left: 25px;
+            margin: 0 0 18px;
+            padding-left: 24px;
         }
 
         li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
-        .back-to-top {
+        .policy-link {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 8px;
             color: #526d62;
             text-decoration: none;
-            font-size: 0.9rem;
             font-weight: 600;
         }
 
-        .back-to-top:hover {
+        .policy-link:hover {
             text-decoration: underline;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 28px;
+            padding: 10px 18px;
+            border: 1px solid #526d62;
+            border-radius: 4px;
+            color: #526d62;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-button:hover {
+            background: #526d62;
+            color: white;
+        }
+
+        .default-message {
+            padding: 35px 0;
+            color: #66717a;
         }
 
     </style>
@@ -133,14 +155,18 @@
 
 <body>
 
-    <main class="policy-page" id="top">
+    <main class="policy-page">
+
+
+        <!-- =========================
+             PAGE HEADER
+        ========================== -->
 
         <a
-    href="index.html#resources"
-    class="back-link">
-    ← Back to Policies & Resources
-</a>
-
+            href="index.html#resources"
+            class="back-link">
+            ← Back to Policies & Resources
+        </a>
 
         <p class="eyebrow">
             SCHOOL & CLASSROOM INFORMATION
@@ -151,13 +177,13 @@
         </h1>
 
         <p class="intro">
-            Information about grading, late assignments, and opportunities
-            for students to revise, redo, and demonstrate their learning.
+            Select a policy or procedure from the main website
+            to view the information you need.
         </p>
 
 
         <!-- =========================
-             GRADING POLICY
+             01 — GRADING
         ========================== -->
 
         <section
@@ -173,75 +199,54 @@
             </h2>
 
             <p>
-                Berea Middle School, operating under Greenville County
-                Schools rules, follows an academic grading system designed
-                to build responsibility while supporting content mastery.
+                Berea Middle School follows the Greenville County Schools
+                academic grading system. Grades reflect student performance
+                and progress toward learning expectations.
             </p>
 
             <h3>
-                Grading System & Scale
+                Grading Scale
             </h3>
 
             <ul>
 
-                <li>
-                    <strong>A:</strong> 90–100
-                </li>
-
-                <li>
-                    <strong>B:</strong> 80–89
-                </li>
-
-                <li>
-                    <strong>C:</strong> 70–79
-                </li>
-
-                <li>
-                    <strong>D:</strong> 60–69
-                </li>
-
-                <li>
-                    <strong>F:</strong> 0–59
-                </li>
+                <li><strong>A:</strong> 90–100</li>
+                <li><strong>B:</strong> 80–89</li>
+                <li><strong>C:</strong> 70–79</li>
+                <li><strong>D:</strong> 60–69</li>
+                <li><strong>F:</strong> 0–59</li>
 
             </ul>
 
-            <p>
-                Grades reflect the numerical score earned by the student
-                for their performance.
-            </p>
-
             <h3>
-                Weight Distribution
+                Assessment Weighting
             </h3>
 
             <ul>
 
                 <li>
-                    <strong>50% Major Assessments:</strong>
-                    Tests, formal lab reports, comprehensive writing
-                    assignments, and major projects.
+                    <strong>50% Major Assessments</strong> —
+                    tests, major projects, formal writing, and similar assessments.
                 </li>
 
                 <li>
-                    <strong>50% Minor Assessments:</strong>
-                    Quizzes, daily classwork, warm-ups, and minor class
-                    assignments.
+                    <strong>50% Minor Assessments</strong> —
+                    quizzes, classwork, warm-ups, and smaller assignments.
                 </li>
 
             </ul>
 
             <a
-                href="#top"
-                class="back-to-top">
-                ↑ Back to top
+                href="index.html#resources"
+                class="back-button">
+                ← Back to Policies & Resources
             </a>
 
         </section>
 
 
         <!-- =========================
-             LATE WORK
+             02 — LATE WORK
         ========================== -->
 
         <section
@@ -257,9 +262,9 @@
             </h2>
 
             <p>
-                Students are expected to turn in all assignments. When a
-                deadline is missed, the assignment may be recorded as
-                Not Handed In (NHI) or Zero in the grade book.
+                Students are expected to submit assignments by the
+                assigned deadline. Missing work may initially be recorded
+                as Not Handed In (NHI) or Zero.
             </p>
 
             <h3>
@@ -267,21 +272,9 @@
             </h3>
 
             <p>
-                Unexcused late work may be accepted within the designated
-                school or team deadline, generally within 5 to 7 school
-                days of the original due date, or until the final grading
-                period ends, whichever comes first.
-            </p>
-
-            <h3>
-                Penalties
-            </h3>
-
-            <p>
-                Depending on the class structure or team expectations,
-                assignments submitted within the designated grace period
-                may be accepted without a point reduction. Work submitted
-                after the applicable deadline may receive a permanent zero.
+                Unexcused late work may generally be accepted within
+                5–7 school days of the original due date, or until the
+                applicable grading period ends, whichever comes first.
             </p>
 
             <h3>
@@ -289,22 +282,22 @@
             </h3>
 
             <p>
-                Students are encouraged to address missing assignments
-                through designated OnTrack Time, flex-time remediation,
-                or available pre-school or after-school tutoring.
+                Students should use available remediation, OnTrack Time,
+                flex time, or tutoring opportunities to address missing
+                work and stay on track.
             </p>
 
             <a
-                href="#top"
-                class="back-to-top">
-                ↑ Back to top
+                href="index.html#resources"
+                class="back-button">
+                ← Back to Policies & Resources
             </a>
 
         </section>
 
 
         <!-- =========================
-             REDO / REVISE / RETAKE
+             03 — REDO / REVISE / RETAKE
         ========================== -->
 
         <section
@@ -320,9 +313,8 @@
             </h2>
 
             <p>
-                Because the goal of instruction is mastery, students may
-                have opportunities to reassess their learning and
-                demonstrate improved understanding.
+                Students may have opportunities to reassess their learning
+                and demonstrate improved understanding.
             </p>
 
             <h3>
@@ -331,8 +323,8 @@
 
             <p>
                 Retakes or redos apply to major tests and projects.
-                Retake opportunities are not provided for minor daily
-                assignments or quizzes.
+                Minor daily assignments and quizzes are not eligible
+                for retakes.
             </p>
 
             <h3>
@@ -340,37 +332,211 @@
             </h3>
 
             <p>
-                Students are allowed one retake opportunity per major
-                assessment.
+                Students may receive one retake opportunity per eligible
+                major assessment.
             </p>
 
             <h3>
-                Prerequisites & Deadlines
+                Relearning
             </h3>
 
             <p>
-                Students should initiate a retake request within 5 school
-                days of receiving the original grade. Teachers may require
-                relearning activities, such as test corrections, tutoring,
-                or an additional study plan, before a reassessment.
+                Students should request a retake within the applicable
+                timeframe and may be required to complete relearning
+                activities such as corrections, tutoring, or additional
+                preparation.
             </p>
 
-            <h3>
-                Late Work
-            </h3>
-
             <p>
-                A major assessment that was originally submitted late is
-                not eligible for a redo or retake.
+                Major assessments submitted late are not eligible for
+                a redo or retake.
             </p>
 
             <a
-                href="#top"
-                class="back-to-top">
-                ↑ Back to top
+                href="index.html#resources"
+                class="back-button">
+                ← Back to Policies & Resources
             </a>
 
         </section>
+
+
+        <!-- =========================
+             04 — STUDENT PROCEDURES
+        ========================== -->
+
+        <section
+            class="policy-section"
+            id="student-procedures">
+
+            <span class="policy-number">
+                04
+            </span>
+
+            <h2>
+                Student Procedures
+            </h2>
+
+            <p>
+                Students are expected to follow classroom and school
+                procedures that support safety, learning, accountability,
+                and respectful behavior.
+            </p>
+
+            <h3>
+                Daily Expectations
+            </h3>
+
+            <ul>
+
+                <li>
+                    Follow classroom directions and remain engaged in learning.
+                </li>
+
+                <li>
+                    Remain in the assigned seat unless permission is given
+                    to move.
+                </li>
+
+                <li>
+                    Follow restroom and hallway procedures.
+                </li>
+
+                <li>
+                    Complete assigned work and use available time responsibly.
+                </li>
+
+                <li>
+                    Treat classmates, teachers, and school property respectfully.
+                </li>
+
+            </ul>
+
+            <h3>
+                Attendance & Accountability
+            </h3>
+
+            <p>
+                Students are expected to arrive on time, be present for
+                instruction, and take responsibility for their learning
+                and behavior.
+            </p>
+
+            <h3>
+                Leaving the Classroom
+            </h3>
+
+            <p>
+                Students must follow the classroom's established procedures
+                and obtain permission before leaving the classroom.
+            </p>
+
+            <a
+                href="index.html#resources"
+                class="back-button">
+                ← Back to Policies & Resources
+            </a>
+
+        </section>
+
+
+        <!-- =========================
+             05 — TECHNOLOGY
+        ========================== -->
+
+        <section
+            class="policy-section"
+            id="technology">
+
+            <span class="policy-number">
+                05
+            </span>
+
+            <h2>
+                Technology & Device Use
+            </h2>
+
+            <h3>
+                Phones & Personal Devices
+            </h3>
+
+            <p>
+                Greenville County Schools requires students to follow
+                district and state restrictions regarding personal
+                electronic devices during the school day.
+            </p>
+
+            <p>
+                Middle school students may not use personal electronic
+                devices during the school day unless an authorized
+                exception applies. Devices should remain turned off or
+                silenced and kept out of sight as directed by the school.
+            </p>
+
+            <a
+                href="https://www.greenville.k12.sc.us/News/main.asp?titleid=2412cellphone"
+                target="_blank"
+                rel="noopener"
+                class="policy-link">
+                View Official Phone Policy →
+            </a>
+
+            <h3>
+                Chromebooks
+            </h3>
+
+            <p>
+                Chromebooks should be used only when directed by the
+                teacher for an assigned learning activity.
+            </p>
+
+            <h3>
+                MagicSchool & Responsible AI
+            </h3>
+
+            <p>
+                Teacher-directed AI activities may support feedback,
+                brainstorming, problem-solving, and learning. Students
+                must use these tools responsibly and according to
+                assignment directions.
+            </p>
+
+            <p>
+                MagicSchool AI may be used as an educational technology
+                resource for teacher-directed activities and learning
+                support.
+            </p>
+
+            <a
+                href="https://www.magicschool.ai/ai-policy/usage-guidelines"
+                target="_blank"
+                rel="noopener"
+                class="policy-link">
+                View MagicSchool & AI Guidelines →
+            </a>
+
+            <a
+                href="index.html#resources"
+                class="back-button">
+                ← Back to Policies & Resources
+            </a>
+
+        </section>
+
+
+        <!-- =========================
+             DEFAULT MESSAGE
+        ========================== -->
+
+        <div class="default-message">
+
+            <p>
+                Please return to the Policies & Resources section
+                and select the information you would like to view.
+            </p>
+
+        </div>
+
 
     </main>
 
